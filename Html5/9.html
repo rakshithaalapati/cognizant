@@ -1,0 +1,35 @@
+<h2>Find Events Near You</h2>
+<button onclick="locateUser()">📍 Find Nearby Events</button>
+<p id="locationStatus"></p>
+
+<script>
+  function locateUser() {
+    const display = document.getElementById("locationStatus");
+
+    if (!navigator.geolocation) {
+      display.textContent = "Geolocation not supported.";
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const lat = pos.coords.latitude.toFixed(4);
+        const lon = pos.coords.longitude.toFixed(4);
+        display.textContent = `Your location: Latitude ${lat}, Longitude ${lon}`;
+      },
+      (error) => {
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            display.textContent = "Location access denied.";
+            break;
+          case error.TIMEOUT:
+            display.textContent = "Location request timed out.";
+            break;
+          default:
+            display.textContent = "Error fetching location.";
+        }
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  }
+</script>
