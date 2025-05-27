@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AJAX Registration</title>
+    <style>
+      #message {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      #message.success {
+        color: green;
+      }
+      #message.error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Register for an Event</h1>
+
+    <form id="registration-form">
+      <label>
+        Name:
+        <input type="text" name="name" required /> </label
+      ><br /><br />
+      <label>
+        Email:
+        <input type="email" name="email" required /> </label
+      ><br /><br />
+      <label>
+        Event:
+        <select name="event" required>
+          <option value="">--Select an Event--</option>
+          <option value="Jazz Concert">Jazz Concert</option>
+          <option value="Tech Meetup">Tech Meetup</option>
+          <option value="Health Camp">Health Camp</option>
+        </select> </label
+      ><br /><br />
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="12.js"></script>
+  </body>
+</html>

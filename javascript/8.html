@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Community Events</title>
+  </head>
+  <body>
+    <h1>Community Events</h1>
+
+    <label for="category-select">Filter by Category:</label>
+    <select id="category-select" onchange="filterByCategory()">
+      <option value="All">All</option>
+      <option value="Music">Music</option>
+      <option value="Art">Art</option>
+      <option value="Health">Health</option>
+    </select>
+
+    <br /><br />
+
+    <input
+      type="text"
+      id="search-box"
+      placeholder="Search by name..."
+      onkeydown="searchOnKey(event)"
+    />
+
+    <div id="event-container"></div>
+
+    <script src="8.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Tech Meetup",
+    "category": "Technology",
+    "date": "2025-06-18",
+    "seats": 50
+  },
+  {
+    "title": "Health Camp",
+    "category": "Health",
+    "date": "2025-06-20",
+    "seats": 30
+  },
+  {
+    "title": "Music Fiesta",
+    "category": "Music",
+    "date": "2025-07-01",
+    "seats": 100
+  }
+]
