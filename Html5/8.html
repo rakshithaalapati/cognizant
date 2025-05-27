@@ -1,0 +1,37 @@
+<h2>Save Your Favorite Event</h2>
+
+<select id="eventSelect">
+  <option disabled selected>Select Event</option>
+  <option>Concert Night</option>
+  <option>Art Exhibition</option>
+  <option>Food Festival</option>
+  <option>Clean-Up Drive</option>
+  <option>Charity Run</option>
+  <option>Book Fair</option>
+</select>
+
+<button onclick="clearPrefs()">Clear Preferences</button>
+
+<script>
+  const eventSelect = document.getElementById("eventSelect");
+
+  // Save to localStorage on selection
+  eventSelect.onchange = () => {
+    const selected = eventSelect.value;
+    localStorage.setItem("favEvent", selected);
+    sessionStorage.setItem("sessionEvent", selected);
+  };
+
+  // Load saved event
+  window.onload = () => {
+    const saved = localStorage.getItem("favEvent");
+    if (saved) eventSelect.value = saved;
+  };
+
+  function clearPrefs() {
+    localStorage.clear();
+    sessionStorage.clear();
+    eventSelect.selectedIndex = 0;
+    alert("Preferences cleared.");
+  }
+</script>
