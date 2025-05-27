@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Responsive Visibility</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5 text-center">
+        <h2>Responsive Visibility Demo</h2>
+
+        <!-- Hidden on small screens, visible on medium (md) -->
+        <div class="bg-primary text-white p-3 d-none d-md-block">
+            <p>Visible on medium (md) screens and larger.</p>
+        </div>
+
+        <!-- Hidden on medium screens, flexbox layout on large (lg) -->
+        <div class="bg-success text-white p-3 d-none d-lg-flex justify-content-center">
+            <p>Visible on large (lg) screens and uses flexbox.</p>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

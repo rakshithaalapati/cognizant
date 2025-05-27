@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Responsive Sidebar</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar (Hidden on small screens, visible on md and larger) -->
+            <nav class="col-md-3 col-lg-2 bg-dark text-white p-4 d-none d-md-block">
+                <h4>Sidebar Menu</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Dashboard</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Reports</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Settings</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 p-4">
+                <h2>Main Content Area</h2>
+                <p>This section remains visible on all screen sizes, while the sidebar appears only on tablets and larger.</p>
+            </main>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

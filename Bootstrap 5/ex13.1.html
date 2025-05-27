@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Dashboard</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Dashboard Overview</h2>
+
+        <div class="row">
+            <!-- Card 1: User Stats -->
+            <div class="col-md-4">
+                <div class="card bg-primary text-white p-3">
+                    <h5 class="card-title">Total Users</h5>
+                    <p class="card-text fs-4 fw-bold">1,245</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Revenue -->
+            <div class="col-md-4">
+                <div class="card bg-success text-white p-3">
+                    <h5 class="card-title">Revenue</h5>
+                    <p class="card-text fs-4 fw-bold">$78,500</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Alerts -->
+            <div class="col-md-4">
+                <div class="card bg-warning text-dark p-3">
+                    <h5 class="card-title">Pending Alerts</h5>
+                    <p class="card-text fs-4 fw-bold">7</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Activity Feed -->
+            <div class="col-md-6">
+                <div class="card bg-light p-3">
+                    <h5 class="card-title">Recent Activity</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-secondary">✔ User John updated profile</li>
+                        <li class="mb-2 text-secondary">✔ New order placed</li>
+                        <li class="mb-2 text-secondary">✔ Payment processed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Notifications -->
+            <div class="col-md-6">
+                <div class="card bg-danger text-white p-3">
+                    <h5 class="card-title">Critical Notifications</h5>
+                    <p class="card-text fs-5">Server down for maintenance</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

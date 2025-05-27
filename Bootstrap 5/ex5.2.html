@@ -1,0 +1,32 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Column Reordering</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- First Column (Appears second on medium screens) -->
+            <div class="col-md-6 order-md-2 bg-primary text-white p-3">
+                <h4>Second Column (Medium Screens)</h4>
+                <p>This column moves **after** the second column when viewed on medium screens.</p>
+            </div>
+
+            <!-- Second Column (Appears first on medium screens) -->
+            <div class="col-md-6 order-md-1 bg-secondary text-white p-3">
+                <h4>First Column (Medium Screens)</h4>
+                <p>This column moves **before** the first column when viewed on medium screens.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

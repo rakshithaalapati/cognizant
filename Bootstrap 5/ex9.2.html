@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Button Groups & Toggle Buttons</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5 text-center">
+        <h2>Button Groups & Toggle Buttons</h2>
+
+        <!-- Button Group -->
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+        </div>
+
+        <hr>
+
+        <!-- Toggle Buttons with Checkboxes -->
+        <div class="btn-group" role="group" aria-label="Toggle Buttons">
+            <input type="checkbox" class="btn-check" id="btncheck1">
+            <label class="btn btn-outline-primary" for="btncheck1">Option 1</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck2">
+            <label class="btn btn-outline-secondary" for="btncheck2">Option 2</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck3">
+            <label class="btn btn-outline-success" for="btncheck3">Option 3</label>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
