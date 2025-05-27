@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Local Community Event Portal</title>
+  </head>
+  <body>
+    <label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+<label for="eventSelect">Choose Event:</label>
+<select id="eventSelect">
+  <option value="" disabled selected>Select an event</option>
+  <option value="10">Workshop - $10</option>
+  <option value="20">Seminar - $20</option>
+  <option value="30">Concert - $30</option>
+</select>
+
+<p id="feeDisplay">Event Fee: $0</p>
+
+<button id="submitBtn">Submit Feedback</button>
+
+<img src="img1.jpg" id="eventImage" alt="Event preview" style="width:200px;cursor:pointer;">
+
+<label for="feedback">Feedback:</label>
+<textarea id="feedback" rows="5" placeholder="Type your feedback..."></textarea>
+<p>Characters typed: <span id="charCount">0</span></p>
+
+<script>
+  const phoneInput = document.getElementById('phone');
+  const eventSelect = document.getElementById('eventSelect');
+  const feeDisplay = document.getElementById('feeDisplay');
+  const submitBtn = document.getElementById('submitBtn');
+  const eventImage = document.getElementById('eventImage');
+  const feedback = document.getElementById('feedback');
+  const charCount = document.getElementById('charCount');
+
+  phoneInput.onblur = () => {
+    const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+    if (!phoneRegex.test(phoneInput.value)) {
+      alert('Please enter a valid phone number (e.g., 123-456-7890).');
+      phoneInput.focus();
+    }
+  };
+
+  eventSelect.onchange = () => {
+    feeDisplay.textContent = `Event Fee: $${eventSelect.value}`;
+  };
+
+  submitBtn.onclick = () => {
+    alert('Thank you for your feedback!');
+  };
+
+  eventImage.ondblclick = () => {
+    if (eventImage.style.width === '200px') {
+      eventImage.style.width = '400px';
+    } else {
+      eventImage.style.width = '200px';
+    }
+  };
+
+  feedback.onkeyup = () => {
+    charCount.textContent = feedback.value.length;
+  };
+</script>
+      </body>
+</html>
