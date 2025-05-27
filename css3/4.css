@@ -1,0 +1,21 @@
+body {
+  background-color: #e0f7fa;
+  background-image: url("event1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.highlight-text {
+  color: rgba(51, 51, 51, 0.85);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 18px;
+}
+
+.gradient-header {
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

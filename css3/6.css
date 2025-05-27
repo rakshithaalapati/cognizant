@@ -1,0 +1,41 @@
+a:link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5a5a5a;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff0000;
+}
+
+.nav-menu {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+
+.event-list {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+.event-list li {
+  margin: 10px 0;
+  padding: 5px;
+}

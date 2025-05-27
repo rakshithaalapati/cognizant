@@ -1,0 +1,29 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.description h2 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  text-transform: none;
+}

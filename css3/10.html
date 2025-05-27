@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Community Bulletin</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 1.1rem;
+      }
+
+      header {
+        background: #333;
+        color: white;
+        padding: 1vh 2vw;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 0.5vh 1vw;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .news-article {
+        max-width: 90vw;
+        margin: 2vh auto;
+        column-count: 2;
+        column-gap: 2vw;
+        column-rule: 1px solid gray;
+        padding: 2vh 2vw;
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1vh 0;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 0.9rem;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 1vh;
+        }
+
+        nav a {
+          font-size: 1rem;
+          padding: 0.5vh 0;
+        }
+
+        .news-article {
+          column-count: 1;
+          column-gap: 0;
+          max-width: 95vw;
+          padding: 1vh 3vw;
+        }
+
+        img {
+          max-width: 90vw;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="news-article">
+      <h2>Community Bulletin</h2>
+      <img src="event1.jpeg" alt="Community event" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula
+        magna at orci dictum, ac consequat libero consequat. Vivamus varius,
+        risus id vestibulum dapibus, augue elit scelerisque nisl, at facilisis
+        nulla enim nec nibh. Sed a odio nibh. Mauris efficitur, tortor quis
+        feugiat mattis, nunc arcu convallis purus, vitae convallis odio nibh sed
+        tortor. Suspendisse potenti.
+      </p>
+      <p>
+        Phasellus cursus, nulla a pretium posuere, augue urna tincidunt ligula,
+        sed bibendum leo augue id erat. Nullam eu suscipit purus. Duis blandit,
+        lacus nec suscipit efficitur, ipsum arcu porta magna, eu tincidunt ex
+        nisl eu risus. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Etiam ultricies efficitur magna, eu
+        varius est euismod a. Morbi nec purus sed sem scelerisque viverra.
+      </p>
+      <p>
+        Donec fermentum metus a nunc porttitor, a pulvinar eros condimentum.
+        Vestibulum sit amet purus id arcu tincidunt vehicula. Proin suscipit,
+        purus sed varius commodo, tellus erat placerat nulla, eu consectetur
+        eros urna vitae quam. Nullam nec ex et velit feugiat faucibus. Morbi
+        commodo magna sed quam vehicula, eu tristique nunc laoreet.
+      </p>
+    </section>
+  </body>
+</html>

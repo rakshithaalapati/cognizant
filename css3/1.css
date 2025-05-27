@@ -1,0 +1,19 @@
+header {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 18px;
+  color: #333;
+  margin: 20px;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+}
